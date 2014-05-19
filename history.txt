@@ -1,0 +1,31 @@
+  501  p
+  502  cd ~
+  503  gem install rails
+  504  rails -v
+  505  p
+  506  rails new yelp -T -d postgresql
+  507  tree
+  508  cd yelp
+  509  tree
+  510  bundle
+  511  bin/rails generate rspec:install
+  513  subl .
+  515  bundle
+  516  bin/rails generate rspec:install
+  517  rspec
+  518  bin/rake db:create
+  519  bin/rake db:migrate
+  520  psql
+  521  rspec
+  522  bin/rake routes
+  523  git init
+  524  gs
+  525  git add .
+  526  git commit -m "first commit"
+  527  git remote add origin git@github.com:StephanMusgrave/Yelp.git
+  528  git push -u origin master
+  529  rspec
+  530  psql
+  531  bin/rake db:create RAILS_ENV=test
+  532  rspec
+  534  history  >> history.txt
