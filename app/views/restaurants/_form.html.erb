@@ -12,13 +12,13 @@
 
 <%= form_for @restaurant do |f| %>
   <%= f.label :name %>
-  <%= f.text_field :name %>
+  <%= f.text_field :name, required: true %>
 
   <%= f.label :address %>
-  <%= f.text_field :address %>
+  <%= f.text_field :address, required: true %>
 
   <%= f.label :cuisine %>
-  <%= f.text_field :cuisine  %>
+  <%= f.text_field :cuisine, required: true %>
 
   <%= f.submit %>
 <% end %>

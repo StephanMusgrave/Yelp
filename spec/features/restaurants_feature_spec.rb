@@ -38,13 +38,25 @@ end
 describe 'editing a restaurant' do
   before { Restaurant.create(name: 'Angels', address: 'Camberwell Church Street', cuisine: 'Spanish')}
   
-  it 'saves the change to the restaurant' do
-    visit '/restaurants'
-    click_link 'Edit Angels'
-    fill_in 'Name', with: 'Angels and Gipsies'
-    click_button 'Update Restaurant'
-    expect(current_path).to eq '/restaurants'
-    expect(page).to have_content 'Angels and Gipsies'
+  context 'with valid data' do
+    it 'saves the change to the restaurant' do
+      visit '/restaurants'
+      click_link 'Edit Angels'
+      fill_in 'Name', with: 'Angels and Gipsies'
+      click_button 'Update Restaurant'
+      expect(current_path).to eq '/restaurants'
+      expect(page).to have_content 'Angels and Gipsies'
+    end
+  end
+
+  context 'with invalid data' do
+    it 'displays an error' do
+      visit '/restaurants'
+      click_link 'Edit Angels'
+      fill_in 'Name', with: 'angels and gipsies'
+      click_button 'Update Restaurant'
+      expect(page).to have_content 'error'
+    end
   end
 end
 
