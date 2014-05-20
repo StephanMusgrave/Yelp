@@ -10,16 +10,29 @@ describe 'restaurants index page' do
 end
 
 describe 'creating a restaurant' do
-  it 'adds it to the restaurants index' do
-    visit 'restaurants/new'
-    fill_in 'Name', with: 'Moro'
-    fill_in 'Address', with: '34 Exmouth Market, London'
-    fill_in 'Cuisine', with: 'Spanish'
-    click_button 'Create Restaurant'
+  context 'with valid data' do
+    it 'adds it to the restaurants index' do
+      visit 'restaurants/new'
+      fill_in 'Name', with: 'Moro'
+      fill_in 'Address', with: '34 Exmouth Market, London'
+      fill_in 'Cuisine', with: 'Spanish'
+      click_button 'Create Restaurant'
 
-    expect(current_path).to eq   '/restaurants'
-    expect(page).to have_content 'Moro'
+      expect(current_path).to eq   '/restaurants'
+      expect(page).to have_content 'Moro'
+    end
   end
+
+  context 'with invalid data' do
+    it 'shows an error' do
+      visit 'restaurants/new'
+      fill_in 'Name', with: 'moro'
+      fill_in 'Address', with: '34'
+      click_button 'Create Restaurant'
+      expect(page).to have_content 'error'
+    end
+  end
+
 end
 
 describe 'editing a restaurant' do

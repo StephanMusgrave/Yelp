@@ -1,13 +1,5 @@
-# == Schema Information
-#
-# Table name: restaurants
-#
-#  id         :integer          not null, primary key
-#  name       :string(255)
-#  address    :text
-#  created_at :datetime
-#  updated_at :datetime
-#
-
 class Restaurant < ActiveRecord::Base
+  validates :name, presence: true, format: { with: /\A[A-Z]/ }
+  validates :address, presence: true, length: { minimum: 3 }
+  validates :cuisine, presence: true
 end
