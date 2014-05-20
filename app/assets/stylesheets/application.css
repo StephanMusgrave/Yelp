@@ -13,3 +13,14 @@
  *= require_tree .
  *= require_self
  */
+body {
+  background-color: gray;
+}
+
+.input {
+  background-color: white;
+}
+
+li {
+display: inline-block;
+}
