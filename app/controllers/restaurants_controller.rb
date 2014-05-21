@@ -36,7 +36,6 @@ class RestaurantsController < ApplicationController
     @restaurant.destroy
     flash[:notice] = 'Deleted successfully'
     redirect_to '/restaurants'
-
   end
  
 
