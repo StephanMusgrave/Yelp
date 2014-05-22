@@ -30,6 +30,8 @@ group :development, :test do
   gem 'annotate'
   gem 'rspec-rails'
   gem 'capybara'
+  gem 'database_cleaner'
+  gem 'poltergeist'
 end
 
 # Use ActiveModel has_secure_password

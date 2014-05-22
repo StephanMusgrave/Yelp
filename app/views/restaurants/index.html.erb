@@ -1,6 +1,13 @@
+<template id="review_template"
+<li>
+  <strong>{{ star_rating }}</strong> - {{ thoughts }}
+</li>
+</template>
+
+
 <% if @restaurants.any? %>
   <% @restaurants.each do |restaurant| %>
-  <div class='restauarant'>
+  <div class='restaurant'>
     <h2><%= restaurant.name %></h2>
     <%= link_to "Edit #{restaurant.name}", edit_restaurant_path(restaurant) %>
     <%= link_to "Delete #{restaurant.name}", restaurant_path(restaurant), method: :delete, data: { confirm: 'Are you sure?' } %>
@@ -18,6 +25,22 @@
           <strong> <%= star_rating(review.rating) %></strong> - <%= review.thoughts %>
         </li>
       <% end %>
+    </ul>
+
+    <%= form_for [restaurant, @review] do |f| %>
+    <%= f.label :thoughts %>
+    <%= f.text_area :thoughts %>
+    
+    <%= f.label :rating %>
+    <%= f.select :rating, 1..5 %>
+
+    <%= f.submit 'Leave Review' %>
+
+
+<% end %>
+
+
+
 
   </div>
 

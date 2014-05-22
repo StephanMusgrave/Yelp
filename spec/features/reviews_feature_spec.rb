@@ -8,7 +8,7 @@ describe 'writing reviews' do
     expect(page).to have_content '0 reviews'
   end
 
-  it 'adds the review to the restaurant' do
+  it 'adds the review to the restaurant', js: true do
     leave_review(4, 'Good but noisy')
     expect(current_path).to eq '/restaurants'
     expect(page).to have_content 'Good but noisy'
