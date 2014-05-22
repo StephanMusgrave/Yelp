@@ -1,4 +1,4 @@
-<template id="review_template"
+<template id="review_template">
 <li>
   <strong>{{ star_rating }}</strong> - {{ thoughts }}
 </li>
@@ -35,9 +35,7 @@
     <%= f.select :rating, 1..5 %>
 
     <%= f.submit 'Leave Review' %>
-
-
-<% end %>
+    <% end %>
 
 
 
