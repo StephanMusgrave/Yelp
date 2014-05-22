@@ -38,3 +38,34 @@ describe Restaurant do
   end
 
 end
+
+describe '#average_rating' do
+  let(:restaurant) { Restaurant.create(name: 'Angels', address: 'Camberwell Church Street', cuisine: 'Spanish')}
+
+  it 'initially returns N/A' do
+    expect(restaurant.average_rating).to eq 'N/A'
+  end
+
+  context '1 review' do
+    before { restaurant.reviews.create(rating: 3) }
+    it 'returns the score of that review' do
+      expect(restaurant.average_rating).to eq 3
+    end
+  end
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

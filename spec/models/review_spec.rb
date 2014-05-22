@@ -6,7 +6,7 @@ describe Review do
     expect(review).to have(1).error_on(:rating)
   end
 
-  it 'is invalid if the rating is < 05' do
+  it 'is invalid if the rating is < 0' do
     review = Review.new(rating: 0)
     expect(review).to have(1).error_on(:rating)
   end
