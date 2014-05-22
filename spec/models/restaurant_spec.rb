@@ -52,6 +52,26 @@ describe '#average_rating' do
       expect(restaurant.average_rating).to eq 3
     end
   end
+
+  context '> 1 review' do
+    before do 
+      restaurant.reviews.create(rating: 3) 
+      restaurant.reviews.create(rating: 5) 
+    end
+    it 'returns the score of that review' do
+      expect(restaurant.average_rating).to eq 4
+    end
+  end
+
+  context 'non-integer average for rating' do
+    before do 
+      restaurant.reviews.create(rating: 2) 
+      restaurant.reviews.create(rating: 5) 
+    end
+    it 'does not round up or down' do
+      expect(restaurant.average_rating).to eq 3.5
+    end
+  end
 end
 
 
