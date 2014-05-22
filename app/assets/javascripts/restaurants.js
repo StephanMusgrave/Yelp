@@ -10,8 +10,8 @@ $(document).ready(function(){
     reviewList.append(newReview);
 
     currentRestaurant.find('.review_count').text(review.restaurant.review_count);
-    currentRestaurant.find('.average_rating_number').text(review.restaurant.review_count);
     currentRestaurant.find('.average_rating_stars').text(review.restaurant.average_rating_stars);
+    currentRestaurant.find('.average_rating').text(review.restaurant.average_rating);
     });
   });
 });

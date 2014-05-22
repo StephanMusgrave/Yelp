@@ -9,7 +9,9 @@ class ReviewsController < ApplicationController
     @review = @restaurant.reviews.create!(params[:review].permit(:thoughts, :rating))
 
     # redirect_to '/restaurants'
-  render json: @review
+    render 'create', content_type: :json
 
   end
+
+
 end

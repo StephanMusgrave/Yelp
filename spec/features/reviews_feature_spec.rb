@@ -15,16 +15,16 @@ describe 'writing reviews' do
     expect(page).to have_content '1 review'
   end
 
-  it 'calculates the average of reviews' do
-    leave_review(4, 'Good but noisy')
+  it 'calculates the average of reviews', js: true do
+    leave_review(5, 'Good but noisy')
     leave_review(2, 'Poor')
-    expect(page).to have_content 'Average rating: 3'
+    expect(page).to have_content '3.5'
 
   end
 
   def leave_review(rating, thoughts)
       visit '/restaurants'
-      click_link 'Review Moro'
+      # click_link 'Review Moro'
 
       fill_in 'Thoughts', with: thoughts
       select rating.to_s, from: 'Rating' 
