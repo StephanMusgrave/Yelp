@@ -16,9 +16,10 @@
     <span class='review_count'><%= pluralize restaurant.reviews.count, 'review' %></span> 
     </h4> 
 
-    <h5><span class='average_rating'>
-    'Average rating:'' 
+    <h5>Average rating: <span class='average_rating_number'>
     <%= number_with_precision(restaurant.average_rating, precision: 1 ) %>
+    </span>
+    <span class='average_rating_stars'>
     <%= star_rating(restaurant.average_rating)%>
     </span></h5>
 
