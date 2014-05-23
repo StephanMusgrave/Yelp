@@ -17,6 +17,26 @@ body {
   background-color: gray;
 }
 
+h1 {
+ background-color: yellow; 
+}
+
+h2 {
+ background-color: green; 
+}
+
+h3 {
+ background-color: brown; 
+}
+
+h4 {
+ background-color: red; 
+}
+
+h5 {
+ background-color: blue; 
+}
+
 .input {
   background-color: white;
 }
