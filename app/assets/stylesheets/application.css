@@ -14,31 +14,31 @@
  *= require_self
  */
 body {
-  background-color: gray;
+  background-color: white;
 }
 
 h1 {
- background-color: yellow; 
+ background-color: grey; 
 }
 
 h2 {
- background-color: green; 
+ background-color: grey; 
 }
 
 h3 {
- background-color: brown; 
+ background-color: grey; 
 }
 
 h4 {
- background-color: red; 
+ background-color: grey; 
 }
 
 h5 {
- background-color: blue; 
+ background-color: grey; 
 }
 
 .input {
-  background-color: white;
+  background-color: grey;
 }
 /*
 li {

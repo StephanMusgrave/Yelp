@@ -3,5 +3,17 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .restaurant {
-  background-color: pink;
+  background-color: grey;
+  border: 3px solid black;
+  border-radius: 5px;
+  margin: 15px;
+  // display: inline-block;
+}
+
+.feedback {
+  background-color: yellow;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 15px;
+  // display: inline-block;
 }

@@ -11,6 +11,11 @@ describe 'writing reviews' do
   end
 
   context 'logged in' do 
+
+    before do
+      user = User.create(email: 'Steve@s.com', password: 'password', password_confirmation: 'password')
+      login_as user
+    end
     
     specify 'restaurants begin with no reviews' do
       visit '/restaurants'

@@ -1,7 +1,9 @@
 class RestaurantsController < ApplicationController
+  before_action :authenticate_user!, except: [:index]
+
 
   def index
-    @restaurants =Restaurant.all
+    @restaurants = Restaurant.all
     @review = Review.new
   end
 
