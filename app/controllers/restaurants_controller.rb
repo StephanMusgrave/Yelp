@@ -1,7 +1,6 @@
 class RestaurantsController < ApplicationController
   before_action :authenticate_user!, except: [:index]
 
-
   def index
     @restaurants = Restaurant.all
     @review = Review.new
@@ -41,5 +40,4 @@ class RestaurantsController < ApplicationController
     redirect_to '/restaurants'
   end
  
-
 end
