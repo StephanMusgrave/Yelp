@@ -1,4 +1,4 @@
-# {Title}
+# Yelp clone
 
 ## Objectives
 
@@ -9,7 +9,20 @@
 |Technology                 |Used for                        |
 |---------------------------|--------------------------------|
 |Ruby                       |Programming language       |
-
+|Rails  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
 
 ## Developed by:
 
