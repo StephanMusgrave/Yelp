@@ -1,4 +1,5 @@
 # Yelp clone
+Week 7 project at Makers Academy
 
 ## Objectives
 
@@ -11,18 +12,8 @@
 |Ruby                       |Programming language       |
 |Rails  |  |
 |  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
+
+
 
 ## Developed by:
 
