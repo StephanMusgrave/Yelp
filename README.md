@@ -9,17 +9,16 @@ Week 7 project at Makers Academy
 
 |Technology                 |Used for                        |
 |---------------------------|--------------------------------|
-|Ruby                       |Programming language       |
-|Rails  |  |
-|  |  |
-
-
+|Ruby 2.1.1                 |Main programming language       |
+|Ruby on Rails 4.1.1        |Model View Controller Framework |
 
 ## Developed by:
 
 [Steve Musgrave]
 
 [Steve Musgrave]:https://github.com/StephanMusgrave
+
+## Further work to do
 
 == README
 
