@@ -1,5 +1,5 @@
 # Yelp clone
-Week 7 project at Makers Academy
+Week 7 project at [Makers Academy]
 
 ## Objectives
 
@@ -17,7 +17,7 @@ Week 7 project at Makers Academy
 [Steve Musgrave]
 
 [Steve Musgrave]:https://github.com/StephanMusgrave
-
+[Makers Academy]:http://www.makersacademy.com
 ## Further work to do
 
 == README
